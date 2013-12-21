@@ -1,0 +1,44 @@
+<!--xml header-->
+<?php include('./common/xmlhead.php');?>
+<title>Jino Park</title>
+<!--navigation,main wrapper,main container-->
+<?php include('./common/top.php');?>
+
+<?php
+	$dbh = new PDO('sqlite:./users.db');
+
+	
+		$dbh->exec("DROP TABLE user_info;");
+		$stm = "CREATE TABLE user_info
+			(
+			id int(10) NOT NULL,
+			u_name varchar(50),
+			hashed_pw varchar(100),
+			first_name varchar(50),
+			last_name varchar(50),
+			PRIMARY KEY (id)
+			);";
+		//hardcoded for testing purposes
+		$dbh->exec($stm);
+		$dbh->exec("INSERT INTO user_info VALUES (0,'jino','fb45615cea1183af03479d88ad4da5cd','Jino','Park');");
+		$dbh->exec("INSERT INTO user_info VALUES (1,'ryan','95f7892abbdcc8a4dc0d25c23b40ee54','Ryan','Hahn');");
+
+	
+
+	
+
+	
+		//QUERY SELECT
+		$ret = $dbh->query("SELECT u_name, hashed_pw FROM user_info ORDER BY u_name;");
+		//for each ROW, row[COLUMN]
+		foreach ($ret as $row)
+		{
+			echo $row["u_name"];
+			
+		}
+
+?>
+
+<!--closing tags for main wrapper,main container,body,html-->
+<?php include('./common/bot.php');?>
+

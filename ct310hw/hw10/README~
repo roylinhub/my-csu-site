@@ -1,0 +1,11 @@
+README for hw10 ct310
+
+http://www.cs.colostate.edu/~park/ct310hw/hw10/hw10.php
+
+
+Two extra fields:
+
+Phone Number:
+		Must be validated by being 10 digits and containing only digits.
+Gender:
+		Must be only one character, and either m or f.

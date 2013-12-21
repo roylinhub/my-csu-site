@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <title>Annika's Home Page</title>
+   <meta http-equiv="Content-Type" 
+         content="text/html; charset=utf-8" />
+   <link href="test.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+<script language="JavaScript" type="text/javascript">
+
+function ajaxRequest() {
+    try {
+        var request = new XMLHttpRequest();
+    }catch(e1){
+        try {
+            request = new ActiveXObject("Msxml2.XMLHTTP");
+        }catch(e2){
+            try{
+                request = new ActiveXObject("Microsoft.XMLHTTP");
+            }catch(e3){
+                request = false;
+            }
+        }
+    }
+    return request;
+}
+function callDanielle(){
+    var req = new ajaxRequest();
+    // req.open("POST", "http://www.cs.colostate.edu/~alexande/index.html", true);
+    req.open("POST", "../lec02/example01.html", true);
+
+    // Don't know the issue here, but commenting out the next line - JRB
+    // req.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //req.setRequestHeader("Accept", "text/plain");
+
+    //req.setRequestHeader("Connection", "close");
+
+    req.onreadystatechange = function(){
+        if(req.readyState == 4 && req.status == 200){
+            if(req.responseText != null){           
+                alert(req.responseText);
+            }
+        }
+    }
+
+    req.send(null);
+}
+
+</script>
+
+    <div id="main">
+        <div>
+            <!-- Image does not need styling, it was created to fit the page -->
+            <img src="http://www.cs.colostate.edu/~muehlbra/banner.png" alt="Pretty clouds and some birds on a branch"></img>
+        </div>
+        <div id="navigation">
+            <ul id="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="http://www.cs.colostate.edu/cstop/index.php">CS Homepage</a></li>
+                <li><a href="http://www.cs.colostate.edu/~muehlbra/style1.html">Style 1</a></li>
+                <li><a href="http://www.cs.colostate.edu/~muehlbra/style2.html">Style 2</a></li>
+            </ul>
+        </div>
+        <div>
+            <div id="table">
+                <table id="table_content">
+                    <tbody>
+                        <tr>
+                            <th>Sunday</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th> <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td></td> <td></td> <td>01</td> <td>02</td> <td>03</td> <td>04</td> <td>05</td>
+                        </tr>
+                        <tr>
+                            <td>06</td> <td>08</td> <td>09</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>14</td> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>21</td> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td>
+                        </tr>
+                        <tr>
+                            <td>28</td> <td>29</td> <td>30</td> <td>31</td> <td></td> <td></td> <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="otherstuff">
+                <form name="ajaxCall">
+                    <input type="button" onclick="callDanielle()" name="ajax" value="See Lecture 2 Example 1">
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+        
+        </div>
+    </div>
+</body>
+
+</html>

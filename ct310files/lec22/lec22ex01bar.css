@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+p#barp {
+	color: Brown;
+}
+
+p#foop {
+	color: ForestGreen;
+}

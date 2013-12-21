@@ -1,0 +1,22 @@
+<!--xml header-->
+<?php include('./common/xml_head.php');?>
+<title>CSUBook</title>
+<!--navigation,main wrapper,main container-->
+<?php include('./common/p3_top.php');?>
+<h2>Shortname: csubook2</h2>
+
+<?php
+SHOULD GO TO INDEX.PHP
+	echo '<p>Welcome to csu book.</p>';
+	echo '<h4>Users on site:</h4>';
+	get_user_list();
+?>
+
+
+<!--<a class = "links "href="http://www.cs.colostate.edu/~park/p3/api_proposal.php">API Proposal</a>!-->
+
+	
+<!--closing tags for main wrapper,main container,body,html!-->
+<?php include('./common/p3_bot.php');?>
+
+	

@@ -1,0 +1,16 @@
+div#imregion {
+	position :relative;
+	}
+
+img#stones {
+   padding: 1px;
+   border:  1px solid #000000;	}
+
+div.sdot {
+	display:block;
+	position: absolute;
+	left: 138px;
+	top:  138px;
+	width:  24px;
+	height: 24px;
+}

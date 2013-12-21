@@ -1,0 +1,136 @@
+/*    
+GENERAL CSS 
+*/
+body 
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	/*background-color: #303030;*/
+	background-color: #FFF;
+	-webkit-backface-visibility: hidden;
+	font-smoothing: antialiased;
+	margin:0;
+	padding:0;
+}
+
+/***WRAPPERS***/
+
+	/*inner border*/
+	div.black_wrapper
+	{	/*
+		padding: 10px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #000;
+		*/
+	}
+	/*making room at the top*/
+	div.main_wrapper
+	{
+		width:740px;
+		height:70%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color:#F2F2F2;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}
+/***WRAPPERS***/
+
+
+/***CONTAINERS***/
+	/*main*/
+	div.main_container
+	{
+		color: #000;
+		background-color:#FFF;
+		box-shadow: 1px 1px 5px #888888;
+		padding: 5px;
+		/*
+		background-image: url('./img/bg2.png');
+		background-repeat:no-repeat;
+		background-position:0% 100%;
+		*/
+		/*
+		background-color: #D8D8D8;
+		border-width: 10px;
+		border-style: solid;
+		border-color:#F2F2F2;  
+		*/
+		/* #3D72A4;*/
+		
+				
+		
+		width:700px;
+		height:60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+/***CONTAINERS***/
+
+
+/***LINKS/ANCHORS***/
+	/*general*/
+	a.links 
+	{
+		Tahoma, Geneva, sans-serif;
+		font-weight:bold;
+		color: #000;
+	}
+	/*hover color*/
+	a.links:hover
+	{
+		color: #3C9CCD;
+	}
+	
+	/*navigation links*/
+	a.nav_item
+	{
+		Tahoma, Geneva, sans-serif;
+		font-weight:bold;
+		color: #000;/*#D8D8D8;*/
+		text-decoration: none;
+	}
+	/*navigation hover color*/
+	a.nav_item:hover
+	{
+		color: #3D72A4;/*#000;*/
+	}
+/***LINKS/ANCHORS***/
+
+/***NAVIGATION***/
+	/*main*/
+	div.main_nav
+	{
+		background-image: url('./img/nav1.png');
+		width:720px;
+		height: 60px;
+		margin-right: auto;
+		margin-left: auto;
+		/*padding-bottom: 2px;*/
+	}
+	div.nav_item_container
+	{
+		float:left;
+		margin:0;
+		padding-top: 45px;
+		text-align:center;
+		width:80px;
+		height:40px;
+	}
+/***NAVIGATION***/
+
+/***BOT IMG***/
+	img.bot
+	{
+		display: block;	
+		margin-right: auto;
+		margin-left: auto;
+	}
+/***BOT IMG***/
+
+
+

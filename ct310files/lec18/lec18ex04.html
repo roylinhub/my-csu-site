@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lecture 18 - Example 4</title>
+<script type="text/javascript">
+	var http = false;
+	if (document.domain == 'www.cs.colostate.edu') {
+		var vurl = 'http://www.cs.colostate.edu/~ross/ct310lec18validate.php';
+	} else {
+		var vurl = 'ct310lec18validate.php';
+	}
+	if (navigator.appName == "Microsoft Internet Explorer") {
+		http = new ActiveXObject("Microsoft.XMLHTTP");
+	} else {
+		http = new XMLHttpRequest();
+	}
+	function validate(user) {
+		http.abort();
+		http.open("GET", vurl + '?name=' + user, true);
+		http.onreadystatechange = function() {
+			if (http.readyState == 4) {
+				document.getElementById('valbak').innerHTML = http.responseText;
+			}
+		}
+		http.send(null);
+	}
+</script>
+</head>
+<body>
+	<h3 style="text-align: center">
+		Example by <a
+			href="http://web.archive.org/web/20110827083343/http://daniel.lorch.cc/docs/ajax_simple/?/docs/ajax_simple">
+			Daniel Lorch </a>
+	</h3>
+	<h1>Please choose your username:</h1>
+
+	<form>
+		<input type="text" onkeyup="validate(this.value)" />
+		<div id="valbak"></div>
+	</form>
+</body>
+</html>

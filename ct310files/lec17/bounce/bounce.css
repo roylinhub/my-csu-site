@@ -1,0 +1,22 @@
+#pfield {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	width: 600px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	border: solid 2px #000000;
+}
+
+#pfield2 {
+	position: relative;
+}
+
+div.sdot {
+	position: absolute;
+	left: 350px;
+	top: 300px;
+	width: 24px;
+	height: 24px;
+}

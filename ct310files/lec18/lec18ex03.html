@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lecture 18 - Example 3</title>
+<script type="text/javascript">
+var http = false;
+
+if(navigator.appName == "Microsoft Internet Explorer") {
+  http = new ActiveXObject("Microsoft.XMLHTTP");
+} else {
+  http = new XMLHttpRequest();
+} 
+
+function replace() {
+  http.open("GET", "test.txt", true);
+  http.onreadystatechange=function() {
+    if(http.readyState == 4) {
+      document.getElementById('foo').innerHTML = http.responseText;
+    }
+  }
+  http.send(null);
+}
+</script>
+</head>
+<body>
+<h3 style="text-align:center">Example by 
+   <a href="http://web.archive.org/web/20110827083343/http://daniel.lorch.cc/docs/ajax_simple/?/docs/ajax_simple"> 
+   Daniel Lorch </a></h3> 
+<p><a href="javascript:replace()">Replace Text</a></p>
+<div id="foo">
+  Hello, world!
+</div>   
+</body>
+</html>

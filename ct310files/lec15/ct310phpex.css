@@ -1,0 +1,90 @@
+body {
+	background-color: #AAAAAA;
+	padding: 0px;
+	margin:  0px;
+}
+
+/* The page is inset on the browswers window. */
+#page {
+	border-style: ridge;
+	border-width: thick;
+	border-color: #888888;
+	padding: 0px;
+	margin:  16px;
+}
+
+#header {
+	padding: 1em;
+	font-family: Arial;
+	font-size:150%;
+	text-align:center;
+	color: #000000;
+	background-color: #F0F0F0;
+	border-top: solid 1px #909090;
+	border-left: solid 1px #909090;
+	border-right: solid 1px #909090;
+	border-bottom: solid 2px #000000
+}
+
+#contents {
+	font-family: Times-New-Roman;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 8px;
+	border: solid 1px #909090;
+}
+
+p.threecol {
+	padding: 0px 12px 0px 12px;
+}
+
+#col1 {
+	border: solid 1px; 
+	float: left;
+	width: 33%;
+}
+
+#col2 {
+	border: solid 1px; 
+	float: left;
+	width: 33%;
+}
+
+#col3 {
+	border: solid 1px; 
+	float: left;
+	width: 33%;
+}
+
+#quadbit {
+	float : left;
+	width : 25%;
+	}
+	
+
+#acknowledge {
+	padding: 4px 0px 4px 12px;
+	clear: both;
+	width: 99%;
+}
+
+a.ackw {
+	text-decoration: none;
+	color: #FFCC00;
+}
+
+a.ackw:link {
+	color: #FFCC00;
+}
+
+a.ackw:visited {
+	color: #FFCC00;
+}
+
+a.ackw:hover {
+	color: #FFFF99;
+}
+
+a.ackw:active {
+	color: #FFFF99;
+}

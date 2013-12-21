@@ -1,0 +1,9 @@
+<?php
+function users() {
+	return $_REQUEST['var'];
+}
+
+
+if (isset($_REQUEST['var'])){echo users();}
+
+?>

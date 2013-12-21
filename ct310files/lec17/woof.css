@@ -1,0 +1,10 @@
+table#wooftable {
+	border: solid 1px;
+	padding : 4px;
+	}
+	
+td.woofit {
+	text-align    : right;
+	padding-left  : 1em;
+	padding-right : 1em;
+	}	

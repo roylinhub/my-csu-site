@@ -1,0 +1,55 @@
+/*    
+Homework 5, hw5.css
+3/3/2013
+Jino Park
+*/
+
+body 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #00FFFF;
+	margin: 0;
+	padding: 0;
+}
+#header
+{
+	background-color: #FFFFCC;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding-top: 14px;
+	height: 75px;	
+}
+#footer
+{
+	background-color: #FFF;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding-top: 14px;
+	height: 75px;
+}
+#content
+{
+ 
+	background-color: #009999;
+	width: 75%;
+	height: 280px;
+	border-style:solid;
+	border-width: 2px;
+	padding-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+
+	
+}
+#menu
+{
+	float: right;
+	background-color: #0099FF;
+	width: 20%;
+	height: 300px;
+	border-style: solid;
+	border-width: 2px;
+}
